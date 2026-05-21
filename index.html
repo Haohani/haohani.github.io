@@ -10,53 +10,76 @@
             padding: 0;
             box-sizing: border-box;
         }
-        正文 {
+        body {
             font-family: "Microsoft YaHei", sans-serif;
-            背景: 线性渐变(135度, #667eea0%, #764ba2100%);
-            最小高度: 100视口高度;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
             显示: flex;
             justify-content: center;
             align-items: center;
             color: white;
         }
-        .容器 {
-            背景: rgba(255, 255, 255, 0.15);
+        .card {
+            background: rgba(255, 255, 255, 0.15);
             背景滤镜: 模糊(10像素);
             边框圆角: 20像素;
             padding: 40px;
             text-align: center;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            最大宽度: 400像素;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            边框圆角: 50%;
+            背景: 白色;
+            margin: 0 auto 20px;
+            显示: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            颜色: #667eea;
         }
         h1 {
-            字体大小: 36像素;
-            margin-bottom: 15px;
+            font-size: 28px;
+            margin-bottom: 10px;
         }
-        p {
-            字体大小: 18像素;
-            margin-bottom: 30px;
+        .bio {
+            font-size: 16px;
             透明度: 0.9;
+            margin-bottom: 25px;
+            行高: 1.6;
         }
-        .btn {
+        .链接 a {
             显示方式: 内联块;
-            padding: 12px 30px;
+            margin: 0 8px;
+            padding: 10px 20px;
             背景: 白色;
             颜色: #667eea;
             文本装饰: 无;
-            border-radius: 30px;
+            边框圆角: 20像素;
             字体粗细: 粗体;
-            transition: all 0.3s ease;
+            transition: 0.3s;
         }
-        .按钮:悬停 {
+        .links a:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
     </样式>
 </head>
 <body>
-    <div class="container">
-        <h1>👋 你好，我是 豪哈尼</h1>
-        <p>欢迎来到我的个人主页，这是用 GitHub Pages 搭建的免费网站！</p>
-        <a href="#" class="btn">了解更多</a>
+    <div class="card">
+        <div class="avatar">👩‍💻</div>
+        <h1>你好，我是 豪哈尼</h1>
+        <p class="bio">
+            一个喜欢折腾的新手~<br>
+            正在学习编程和网页制作<br>
+            欢迎来和我交流！
+        </p>
+        <div 类="links">
+            <a href="https://github.com/Haohani">我的GitHub</a>
+            <a href="#">联系我</a>
+        </div>
     </div>
 </body>
     </html>
